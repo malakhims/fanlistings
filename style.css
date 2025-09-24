@@ -1,0 +1,189 @@
+html, body {
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    margin:0;
+    padding:0;
+    overflow-y: auto;
+    position: relative;
+}
+
+    
+body {
+    background-color:rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 400px;
+    background-position: bottom left 0;
+    font-family: basis33;
+    background-image: url("qhayashida2.png");
+}
+
+
+#rules + ul li::before {
+    content: "- ";
+}
+
+#rules + ul li {
+list-style-type: none;
+}
+
+
+p {
+    color: rgb(0, 0, 0);
+    font-family: basis33;
+    font-size: large;
+}
+
+h1 {
+    color: rgb(255, 0, 0);
+    font-size: xx-large;
+    color: rgba(255, 0, 0, 1);
+}
+
+
+h2 {
+    color: rgb(255, 0, 0);
+    font-size: x-large;
+    color: rgba(255, 0, 0, 1);
+}
+
+
+.display {
+    color:rgb(0, 0, 0);
+}
+
+.display1 {
+    color:rgb(0, 0, 0);
+}
+
+a .widget {
+color: rgb(255, 0, 0);
+}
+
+a .widget :visited {
+color: rgb(201, 101, 39);
+}
+
+a .display {
+color: rgb(139, 0, 0);
+}
+
+a .display :visited {
+color: rgb(209, 0, 0);
+}
+
+
+.box
+{
+    min-height: 100vh;
+    width: 60%;
+    margin: auto;
+    padding: 4px;
+    text-align: center;
+}
+
+td, tr {
+    border-style: white;
+    padding:20px;
+}
+
+    .members-list {
+    display: grid;
+    margin: 20px 0;
+}
+
+.member-entry {
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.member-name {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #ff0000ff;
+}
+
+.member-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.member-details li {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.member-details a {
+    color: rgb(113, 250, 255);
+    text-decoration: none;
+}
+
+.member-details a:hover {
+    text-decoration: underline;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    font-family: basis33;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: basis33;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #ff0000ff;
+    font-family: basis33;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ffffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: basis33;
+    border: 2px solid red;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #d2d2d2ff;
+}
+
+.btn {
+    background: white;
+    color: red;
+    border: none;
+    padding: 10px 14px;
+    border: 2px solid rgb(255, 0, 0);
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+    font-family: basis33;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #5555558d;
+}
+
+.invalid-feedback {
+    color: red;
+    font-size: 12px;
+}
+
+
