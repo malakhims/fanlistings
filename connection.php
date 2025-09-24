@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $formresults = "Your form was submitted!";
 
             // Send Discord webhook message
-            $webhook_url = "https://discord.com/api/webhooks/1154928051449233410/hxdZlvXnjzwjbQx8cpzCGNQjnPkyO91jqYtIpTayRH3gvop-BbuVxDCXCswN9FsFXjDo";
+            $webhook_url = "xxxxx";
             $message = "New $fanlistingname Member!\nName: $name\nSite: $site\nCountry: $country\nEmail: $email";
 
             $data = array("content" => $message);
