@@ -1,9 +1,8 @@
     
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">    
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">  
+      
     
 <h2 id="form">The Form</h2>
-    
-    <form id="myForm" action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
 
         <div class="form-group">
             <label><b>Name</b></label><br />
@@ -155,7 +154,6 @@
         <input type="text" name="website2" autocomplete="off">
     </div>
 
-
     <div class="form-group">
       <center>
         <input type="submit" class="btn" value="Submit" 
@@ -183,4 +181,3 @@
                     </center>
                 </div>
 
-                
