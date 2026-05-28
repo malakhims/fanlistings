@@ -22,6 +22,16 @@ if (!$result) {
     die('Error: ' . mysqli_error($conn));
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Honeypot spam protection
+    if (!empty($_POST['website2'])) {
+        die("Spam detected.");
+    }
+
+    // Human check
+    if ($_POST['human_check'] !== 'yes') {
+        die("Failed human check.");
+    }
+    
     // Prepare an insert statement
     $sql = "INSERT INTO $fanlistingname (name, pending, site, email, country) VALUES (?, ?, ?, ?, ?)";
 
