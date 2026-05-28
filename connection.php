@@ -2,9 +2,9 @@
 session_start();
 
 $servername = "localhost";
-$username = "YOURDATABASEUSERNAME"; // your database username
-$dbname = "fanlistingsdatabase"; //name of yourd database
-$password = "YOURDATABASEPASSWORD"; //password for your database
+$username = "fanlistingsadmin";
+$dbname = "fanlistings";
+$password = "v6Pvk232wiHLzHKbfgQL";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -22,15 +22,12 @@ if (!$result) {
     die('Error: ' . mysqli_error($conn));
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Honeypot spam protection
+
+        // Honeypot spam protection
     if (!empty($_POST['website2'])) {
         die("Spam detected.");
     }
 
-    // Human check
-    if ($_POST['human_check'] !== 'yes') {
-        die("Failed human check.");
-    }
     
     // Prepare an insert statement
     $sql = "INSERT INTO $fanlistingname (name, pending, site, email, country) VALUES (?, ?, ?, ?, ?)";
@@ -51,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $formresults = "Your form was submitted!";
 
             // Send Discord webhook message
-            $webhook_url = "xxxx";
+            $webhook_url = "https://discord.com/api/webhooks/1154928051449233410/hxdZlvXnjzwjbQx8cpzCGNQjnPkyO91jqYtIpTayRH3gvop-BbuVxDCXCswN9FsFXjDo";
             $message = "New $fanlistingname Member!\nName: $name\nSite: $site\nCountry: $country\nEmail: $email";
             
             $data = [
